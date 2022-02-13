@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CardController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flash1.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="1.0" prefHeight="479.0" prefWidth="893.0">
+         <children>
+            <Button fx:id="btPlay" layoutX="424.0" layoutY="130.0" mnemonicParsing="false" onAction="#playFunc" prefHeight="46.0" prefWidth="93.0" style="-fx-background-color: transparent;" text="[PLAY] ">
+               <font>
+                  <Font name="Rockwell Condensed" size="24.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="76.0" prefHeight="37.0" prefWidth="317.0" style="-fx-background-color: #ffcddd;" text="FLASH CARD">
+               <font>
+                  <Font name="Rockwell Condensed Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="btCreate" layoutX="410.0" layoutY="176.0" mnemonicParsing="false" onAction="#createFunc" prefHeight="46.0" prefWidth="105.0" style="-fx-background-color: transparent;" text="[CREATE]">
+               <font>
+                  <Font name="Rockwell Condensed" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btExit" layoutX="421.0" layoutY="211.0" mnemonicParsing="false" onAction="#exitFunc" prefHeight="57.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="[EXIT]" textFill="#6f6f6f">
+               <font>
+                  <Font name="Rockwell Condensed" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
